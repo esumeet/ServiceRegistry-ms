@@ -54,8 +54,8 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				 <configuration>
-          <outputDirectory>dist</outputDirectory>
-        </configuration>
+          			<outputDirectory>dist</outputDirectory>
+        		</configuration>
 			</plugin>
 		</plugins>
 	</build>
