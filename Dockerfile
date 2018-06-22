@@ -11,10 +11,10 @@ VOLUME /tmp
 EXPOSE 8761
 
 # The application's jar file
-ARG JAR_FILE=ServiceRegistry-ms.jar
+ARG JAR_FILE=dist\serviceregistry-0.0.1-SNAPSHOT.jar
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} ServiceRegistry-ms.jar
+ADD ${JAR_FILE} serviceregistry-ms.jar
 
 # Run the jar file 
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/ServiceRegistry-ms.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/serviceregistry-ms.jar"]
